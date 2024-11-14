@@ -1,0 +1,84 @@
+.contact-top {
+  background-color: antiquewhite;
+}
+
+.z {
+  padding: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px red;
+  font-size: 1.5em;
+}
+
+.c {
+  padding-left: 30px;
+  padding-right: 30px;
+  line-height: 1.5em;
+}
+
+.q {
+  font-weight: bold;
+}
+
+.s {
+  padding-bottom: 30px;
+}
+
+.contact-form {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.contact-form p {
+  padding-top: 15px;
+}
+
+button {
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+.v {
+  margin-bottom: 30px;
+}
+
+.result {
+  background-color: azure;
+  padding-left: 15px;
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  overflow-y: scroll;
+  display: none;
+}
+
+.contents {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.ad-title {
+  padding-top: 30px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.g {
+  padding-top: 20px;
+  font-weight: bolder;
+}
+
+#data {
+  margin-right: 30px;
+}
+
+.f {
+  padding-top: 15px;
+}
+
+.y {
+  padding-top: 5px;
+}
+
+li {
+  line-height: 1.5em;
+}/*# sourceMappingURL=style.css.map */

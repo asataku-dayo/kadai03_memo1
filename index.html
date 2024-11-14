@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalStrage学習</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="contact-top">
+        <h2 class="z">CONTACT</h2>
+        <p class="c q">説明会お申し込み・お問い合わせ</p>
+        <br />
+        <p class="c">ぜひ1度、足を運んでみませんか。説明会は随時開催中。</p>
+        <p class="c">
+          その他、お問い合わせもお気軽にどうぞ。お待ちしております。
+        </p>
+        <br />
+        <p class="c">※チーズアカデミーは実際には存在しません。</p>
+        <p class="c s">問い合わせしたらどうなるか、ご想像におまかせします。</p>
+        <br />
+      </div>
+
+      <!-- フォーム -->
+      <form>
+        <div class="contact-form">
+          <dl>
+            <dt>
+              <p class="ids">ID</p>
+            </dt>
+            <dd><input type="text" id="ids" required /></dd>
+          </dl>
+          <dl>
+            <dt>
+              <p class="name">名前</p>
+            </dt>
+            <dd><input type="text" id="names" /></dd>
+          </dl>
+          <dl>
+            <dt>
+              <p class="kana">カナ</p>
+            </dt>
+            <dd><input type="text" id="kanas" /></dd>
+          </dl>
+          <dl>
+            <dt>
+              <p class="mail">メールアドレス</p>
+            </dt>
+            <dd><input type="email" id="emails" /></dd>
+          </dl>
+          <dl>
+            <dt class="kikake">
+              <p>チーズアカデミーを<br />知ったきっかけ</p>
+            </dt>
+            <dd>
+              <select name="" id="kikakes">
+                <option value=""></option>
+                <option value="a">google検索</option>
+                <option value="b">SNS</option>
+                <option value="c">紹介</option>
+                <option value="d">たまたま通りかかった</option>
+                <option value="e">その他</option>
+              </select>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="douki">
+              <p>志望動機</p>
+            </dt>
+            <dd>
+              <div class="reason">
+                <input type="checkbox" class="checks" name="#" value="起業" />
+                <label>起業をしたい</label>
+              </div>
+              <div class="reason">
+                <input type="checkbox" class="checks" name="#" value="転職" />
+                <label>チーズ系企業に就職・転職したい</label>
+              </div>
+              <div class="reason">
+                <input type="checkbox" class="checks" name="" value="仕事" />
+                <label>チーズと関わる仕事をしており、仕事に生かしたい</label>
+              </div>
+              <div class="reason">
+                <input type="checkbox" class="checks" name="" value="教養" />
+                <label>チーズの教養を身につけたい</label>
+              </div>
+            </dd>
+          </dl>
+          <dl>
+            <dt class="detail">
+              <p>詳細</p>
+            </dt>
+            <dd class="textarea-detail">
+              <textarea name="" id="syosai" cols="20" rows="5"></textarea>
+            </dd>
+          </dl>
+        </div>
+        <div class="button-sousin">
+          <button id="styled">送信</button>
+        </div>
+      </form>
+      <button class="v">管理者ページへ</button>
+    </div>
+
+    <!-- モーダル（送信完了有無） -->
+    <div class="sosin"></div>
+
+    <!-- モーダル（裏画面) -->
+    <div class="result">
+      <div class="contents">
+        <div class="ad">
+          <h2 class="ad-title">管理者ページ</h2>
+          <p>※悪用厳禁</p>
+        </div>
+        <div class="data-all">
+          <div class="g">お問い合わせ者一覧</div>
+          <table border="1" id="data">
+            <tr>
+              <th>ID</th>
+              <th>名前</th>
+              <th>カナ</th>
+              <th>メールアドレス</th>
+              <th>知ったきっかけ</th>
+              <th>志望動機</th>
+              <th>詳細</th>
+            </tr>
+          </table>
+          <p class="f">知ったきっかけ番号の意味</p>
+          <ul>
+            <li class="y">a：google検索</li>
+            <li>b；SNS</li>
+            <li>c：紹介</li>
+            <li>d：たまたま通りかかった</li>
+            <li>e：その他</li>
+          </ul>
+        </div>
+        <div style="width: 350px">
+          <canvas id="mychart"></canvas>
+        </div>
+        <button id="cleardata">データ削除</button>
+        <button class="j" style="margin-bottom: 30px">閉じる</button>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
+      integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/js.js"></script>
+  </body>
+</html>
